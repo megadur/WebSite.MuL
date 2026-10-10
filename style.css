@@ -210,7 +210,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/hero.png');
+    background-image: url('assets/hero_tollense.jpg');
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -225,7 +225,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(44, 27, 24, 0.4), rgba(44, 27, 24, 0.7));
+    background: linear-gradient(rgba(44, 27, 24, 0.45), rgba(44, 27, 24, 0.65));
     z-index: -1;
 }
 
@@ -389,24 +389,20 @@ a:hover {
 
 .archive-cover {
     height: 280px;
-    background: var(--color-secondary);
+    background-color: var(--color-bg);
+    background-size: cover;
+    background-position: center;
     border-radius: 4px;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
     transition: var(--transition);
-    background-image: linear-gradient(135deg, var(--color-secondary) 0%, #8c7814 100%);
     cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.08);
 }
 
 .archive-cover:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(109, 93, 16, 0.3);
+    box-shadow: 0 10px 25px rgba(109, 93, 16, 0.25);
 }
 
 .center-btn {
