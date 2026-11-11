@@ -3,137 +3,660 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensch und Land - Tollensetaler Stimme</title>
+    <title>Mensch und Land – Tollensetaler Stimme</title>
+    <meta name="description" content="Kultur- und Regionalmagazin für das Tollensetal von Olaf Spillner (Alt Tellin / Hohenbüssow). Archiv aller 20 Ausgaben der Tollensetaler Stimme und Dokumentation zu Natur, Kultur und Landleben.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Mensch & Land</a>
+            <a href="#" class="logo">Mensch &amp; Land</a>
             <div class="nav-links">
-                <a href="#aktuelles">Aktuelles</a>
-                <a href="#ueber-uns">Über uns</a>
-                <a href="#archiv">PDF Archiv</a>
-                <a href="#mitmachen" class="btn btn-primary">Mitmachen</a>
+                <a href="#archiv">Magazin-Archiv (TTS)</a>
+                <a href="#themen">Themen &amp; Artikel</a>
+                <a href="#ueber-uns">Über das Projekt</a>
+                <a href="#kontakt">Kontakt &amp; Impressum</a>
             </div>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-bg"></div>
+    <!-- HERO SECTION -->
+    <header class="hero" style="background-image: linear-gradient(rgba(26, 16, 14, 0.65), rgba(26, 16, 14, 0.75)), url('assets/hero_tollense.jpg'); background-size: cover; background-position: center;">
         <div class="hero-content">
+            <span class="fade-in" style="display:inline-block; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; color: #e4c575; margin-bottom: 0.75rem; font-weight: 600;">
+                Kultur- &amp; Regionalmagazin · Alt Tellin / Hohenbüssow
+            </span>
             <h1 class="fade-in">Tollensetaler Stimme</h1>
-            <p class="fade-in delay-1">Landleben – Geschichte und Zukunft einer gefährdeten Kulturform.</p>
-            <a href="#aktuelles" class="btn btn-primary fade-in delay-2">Neue Artikel lesen</a>
+            <p class="fade-in delay-1" style="max-width: 720px; margin: 1rem auto 2rem; font-size: 1.25rem; font-style: italic;">
+                „Landleben – Geschichte und Zukunft einer gefährdeten Kulturform.“
+            </p>
+            <div class="fade-in delay-2" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#archiv" class="btn btn-primary">Ausgaben als PDF lesen</a>
+                <a href="#themen" class="btn btn-secondary">Artikel &amp; Dokumente</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="aktuelles" class="section">
+
+        <!-- INTRO CALLOUT -->
+        <section style="background-color: #f7f3ee; border-bottom: 1px solid #e5ded3; padding: 2.5rem 0;">
+            <div class="container" style="max-width: 900px; text-align: center;">
+                <p style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-darker); line-height: 1.6; margin-bottom: 0.5rem;">
+                    Willkommen im Online-Archiv von <strong>Mensch und Land</strong> und der <strong>Tollensetaler Stimme</strong>.
+                </p>
+                <p style="color: #666; font-size: 1rem;">
+                    Herausgegeben von <strong>Olaf Spillner</strong> seit August 2009. Eine unabhängige Chronik über das Landleben im Tollensetal, den Widerstand gegen industrielle Tierhaltung, das Wiederaufleben der Broocker Schlossanlage und das lebendige Kulturgut unserer Heimat.
+                </p>
+            </div>
+        </section>
+
+        <!-- SEKTION 1: DAS MAGAZIN-ARCHIV (ALLE 20 AUSGABEN) -->
+        <section id="archiv" class="section">
             <div class="container">
-                <h2 class="section-title">Neueste Artikel</h2>
-                <div class="articles-grid">
-                    <article class="card article-card">
-                        <div class="card-img" style="background-image: url('assets/wegebau.jpg')"></div>
-                        <div class="card-content">
-                            <span class="tag">Umwelt &amp; Natur</span>
-                            <h3>Wegebau &amp; Landschaftspflege</h3>
-                            <p>Ein Rückblick auf die Entwicklung der Wege, Flora und Fauna in unserer Region nach den jüngsten Renaturierungsmaßnahmen.</p>
-                            <a href="#" class="read-more">Weiterlesen →</a>
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                    <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Chronik 2020 – 2025</span>
+                    <h2 class="section-title">Archiv der Tollensetaler Stimme</h2>
+                    <p style="color: #666; font-size: 1.05rem;">
+                        Hier finden Sie die 20 Ausgaben unseres Magazins. Die vorhandenen Hefte können direkt im Browser geöffnet oder als PDF heruntergeladen werden.
+                    </p>
+                </div>
+
+                <!-- Magazin Grid (20 Ausgaben) -->
+                <div class="archive-grid">
+
+                    <!-- Ausgabe 20: 2025-12 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3060_cover.jpg" alt="Tollensetaler Stimme 2025-12 Adventsausgabe" class="issue-cover-img" loading="lazy">
                         </div>
-                    </article>
-                    <article class="card article-card">
-                        <div class="card-img" style="background-image: url('assets/wanderpoeten.jpg')"></div>
-                        <div class="card-content">
-                            <span class="tag">Kultur</span>
-                            <h3>Poetenfrühstück auf der Burg</h3>
-                            <p>Das alljährliche Poetenfrühstück lockte wieder zahlreiche Zuhörer und Vortragende in das historische Gemäuer der Burg Klempenow.</p>
-                            <a href="#" class="read-more">Weiterlesen →</a>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2025-12</h3>
+                                <p class="issue-meta">Adventsausgabe · Dezember 2025</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
+
+                    <!-- Ausgabe 19: 2025-09 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3055_cover.jpg" alt="Tollensetaler Stimme 2025-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2025-09</h3>
+                                <p class="issue-meta">Spätsommer · September 2025</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 18: 2025-07 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3048_cover.jpg" alt="Tollensetaler Stimme 2025-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2025-07</h3>
+                                <p class="issue-meta">Sommerheft · Juli 2025</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 17: 2025-01 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3042_cover.jpg" alt="Tollensetaler Stimme 2025-01" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2025-01</h3>
+                                <p class="issue-meta">Neujahrsausgabe · Januar 2025</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 16: 2024-12 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3036_cover.jpg" alt="Tollensetaler Stimme 2024-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2024-12</h3>
+                                <p class="issue-meta">Winterausgabe · Dezember 2024</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 15: 2024-08 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3028_cover.jpg" alt="Tollensetaler Stimme 2024-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2024-08</h3>
+                                <p class="issue-meta">Sommerheft · August 2024</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 14: 2024-04 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3022_cover.jpg" alt="Tollensetaler Stimme 2024-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2024-04</h3>
+                                <p class="issue-meta">Frühjahr · April 2024 (3,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/3022_Tollensetaler-Stimme-2024-04.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 13: 2023-12 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3011_cover.jpg" alt="Tollensetaler Stimme 2023-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2023-12</h3>
+                                <p class="issue-meta">Jahresabschluss · Dez. 2023 (6,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/3011_Tollensetaler-Stimme-2023-12.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 12: 2023-03 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2816_cover.jpg" alt="Tollensetaler Stimme 2023-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2023-03</h3>
+                                <p class="issue-meta">Frühlingsheft · März 2023 (2,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2816_Tollensetaler-Stimme-2023-03.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 11: 2022 Radebeuler Jubiläumsausgabe -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2799_cover.jpg" alt="Tollensetaler Stimme 2022 Radebeuler Jubiläumsausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Radebeuler Jubiläum</h3>
+                                <p class="issue-meta">Sonderausgabe · 2022</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 10: 2022-09 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2791_cover.jpg" alt="Tollensetaler Stimme 2022-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2022-09</h3>
+                                <p class="issue-meta">Herbst · September 2022 (1,7 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2791_Tollensetaler-Stimme-2022-09.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 9: 2022-08 -->
+                    <div class="issue-card">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2775_cover.jpg" alt="Tollensetaler Stimme 2022-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <h3 class="issue-title">Ausgabe 2022-08</h3>
+                                <p class="issue-meta">Sommerheft · August 2022</p>
+                            </div>
+                            <div>
+                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 8: 2022-03 Jubiläumsausgabe (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2705_cover.jpg" alt="Tollensetaler Stimme 2022-03 Jubiläumsausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Jubiläum 2022-03</h3>
+                                <p class="issue-meta">Jubiläumsausgabe (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2705_Tollensetaler-Stimme-2022-03.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 7: 2021-12 Adventsausgabe (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2679_cover.jpg" alt="Tollensetaler Stimme 2021-12 Adventsausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-12</h3>
+                                <p class="issue-meta">Adventsausgabe (13,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2679_Tollensetaler-Stimme-2021-12-fixed.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 6: 2021-07 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2624_cover.jpg" alt="Tollensetaler Stimme 2021-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-07</h3>
+                                <p class="issue-meta">Sommer · Juli 2021 (2,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2624_Tollensetaler-Stimme-2021-07.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 5: 2021-04 Katastrophenausgabe Großbrand (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: #821a00; border-width: 2px;">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2584_cover.jpg" alt="Tollensetaler Stimme 2021 Katastrophenausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf" style="background: #ffebee; color: #c62828; border: 1px solid #ffcdd2;">Dokumentation</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Katastrophenheft 2021</h3>
+                                <p class="issue-meta">Großbrand Alt Tellin (3,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2584_Tollensetaler-Stimme-2021-04-Katastrophenausgabe.pdf" target="_blank" class="btn-pdf" style="background-color: #821a00;">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 4: 2021-01 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2574_cover.jpg" alt="Tollensetaler Stimme 2021-01" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-01</h3>
+                                <p class="issue-meta">Winter · Januar 2021 (1,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2574_Tollensetaler-Stimme-2021-01.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 3: 2020-12 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2564_cover.jpg" alt="Tollensetaler Stimme 2020-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2020-12</h3>
+                                <p class="issue-meta">Weihnachtsheft · Dez. 2020 (2,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2564_Tollensetaler-Stimme-2020-12.pdf.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 2: 2020-10 (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2548_cover.jpg" alt="Tollensetaler Stimme 2020-10" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2020-10</h3>
+                                <p class="issue-meta">Herbst · Oktober 2020 (1,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2548_Tollensetaler-Stimme-2020-10.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ausgabe 1: 2020-08 Extrablatt (PDF VORHANDEN!) -->
+                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2540_cover.jpg" alt="Tollensetaler Stimme Extrablatt 2020-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Extrablatt 2020-08</h3>
+                                <p class="issue-meta">Erste Ausgabe · August 2020 (2,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2540_Tollensetaler-Stimme-2020-08-Extrablatt.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="ueber-uns" class="section bg-light">
+        <!-- SEKTION 2: DIE 4 GROSSEN THEMENFELDER DES MAGAZINS -->
+        <section id="themen" class="section bg-light">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                    <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Dokumentation &amp; Lesestoff</span>
+                    <h2 class="section-title">Themen aus dem Magazin</h2>
+                    <p style="color: #666; font-size: 1.05rem;">
+                        Ausgewählte Berichte, Hintergründe und Dossiers aus über einem Jahrzehnt Engagement für Mensch, Natur und Kultur im Tollensetal.
+                    </p>
+                </div>
+
+                <div class="articles-grid">
+
+                    <!-- Thema 1: Alt Tellin & Agrar -->
+                    <article class="card article-card">
+                        <div class="card-img" style="background-image: url('assets/maisfeld_stoppeln.jpg');"></div>
+                        <div class="card-content">
+                            <span class="tag">Agrar &amp; Widerstand</span>
+                            <h3>Ferkelfabrik Alt Tellin: Chronik des Protests</h3>
+                            <p>
+                                Von der Ratssitzung 2006 über die montägliche Mahnwache bis hin zur Brandkatastrophe 2021: Die Geschichte des Bürgerwiderstands gegen industrielle Megaställe an der Tollense.
+                            </p>
+                            <button class="read-more" onclick="openModal('alt-tellin')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                        </div>
+                    </article>
+
+                    <!-- Thema 2: Schloss Broock -->
+                    <article class="card article-card">
+                        <div class="card-img" style="background-image: url('assets/hero_tollense.jpg');"></div>
+                        <div class="card-content">
+                            <span class="tag">Kultur &amp; Denkmal</span>
+                            <h3>Schlossanlage Broock: Auferstehung aus Ruinen</h3>
+                            <p>
+                                Wie ein aufgegebener, ruinöser Ort zum neuen Hoffnungsträger wurde. Bahnhof Sternfeld, das ehrenamtliche GartenCafé und die Zukunft als lebendiges Kulturzentrum.
+                            </p>
+                            <button class="read-more" onclick="openModal('broock')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                        </div>
+                    </article>
+
+                    <!-- Thema 3: Burg Klempenow -->
+                    <article class="card article-card">
+                        <div class="card-img" style="background-image: url('assets/wanderpoeten.jpg');"></div>
+                        <div class="card-content">
+                            <span class="tag">Kultur &amp; Begegnung</span>
+                            <h3>Burg Klempenow: KulturTransit an der Tollense</h3>
+                            <p>
+                                „Der Weg aus den Leitplanken, zurück zur Kultur“: Über 25 Jahre Kultur-Transit 96 e.V., Poetenfrühstück, Appelmarkt und das TRANSIT FESTIVAL an der historischen Wehranlage.
+                            </p>
+                            <button class="read-more" onclick="openModal('klempenow')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                        </div>
+                    </article>
+
+                    <!-- Thema 4: Umwelt & Natur -->
+                    <article class="card article-card">
+                        <div class="card-img" style="background-image: url('assets/wegebau.jpg');"></div>
+                        <div class="card-content">
+                            <span class="tag">Natur &amp; Tollensetal</span>
+                            <h3>Wasser, Wegebau &amp; Wiesenbrüter</h3>
+                            <p>
+                                Zwischen intensiver Landwirtschaft und Renaturierung: Warum das Tollensetal konsequenten Schutz braucht, um Heimat für Mensch, Bienen und Kraniche zu bleiben.
+                            </p>
+                            <button class="read-more" onclick="openModal('umwelt')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKTION 3: ÜBER DAS PROJEKT -->
+        <section id="ueber-uns" class="section">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
+                        <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Hintergrund</span>
                         <h2 class="section-title">Über Mensch und Land</h2>
-                        <p>Wir berichten für Freunde, Bewohner und Gäste des Tollensetals seit August 2009. Damals in Bezug zur modernsten Ferkelfabrik Europas – mit der Kraft der Landesregierung geplant und durchgedrückt für unsere Heimat.</p>
-                        <p>Inzwischen bekommt die Entwicklung des Massentourismus am Tollensetal mit der Broocker Schlossanlage neben der Industrialisierung regenerativer Energien wachsende Bedeutung.</p>
-                        <p><strong>Unser Thema bleibt das Landleben.</strong> Ohne die Verantwortung der Städter für den ländlichen Raum wird jede urbane Perspektive im Desaster enden.</p>
+                        <p>
+                            Wir berichten für Freunde, Bewohner und Gäste des Tollensetals seit August 2009. Damals in direktem Bezug zur ehemals größten Ferkelfabrik Europas in Alt Tellin – mit der Kraft der Landesregierung geplant und durchgedrückt für unsere Heimat.
+                        </p>
+                        <p>
+                            Inzwischen bekommt die Entwicklung des Tourismus am Tollensetal mit der Broocker Schlossanlage neben der Industrialisierung regenerativer Energien und landwirtschaftlicher Flächen wachsende Bedeutung.
+                        </p>
+                        <p style="font-style: italic; border-left: 3px solid var(--color-primary); padding-left: 1rem; color: #444;">
+                            „Unser Thema bleibt das Landleben. Ohne die Verantwortung der Städter für den ländlichen Raum wird jede urbane Perspektive im Desaster enden.“
+                        </p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-box">
-                            <span class="stat-number">18</span>
-                            <span class="stat-label">Jahre Erfahrung</span>
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">Ausgaben Stimme</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Ausgaben</span>
+                            <span class="stat-number">Seit 2009</span>
+                            <span class="stat-label">Stimme der Region</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="archiv" class="section">
-            <div class="container">
-                <h2 class="section-title">Das PDF Archiv</h2>
-                <p class="section-subtitle">Stöbern Sie durch unsere vergangenen Ausgaben der Tollensetaler Stimme.</p>
-                <div class="archive-scroll">
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2026_08.jpg');"></div>
-                        <span>August 2026</span>
-                    </div>
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2026_06.jpg');"></div>
-                        <span>Juni 2026</span>
-                    </div>
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2026_03.jpg');"></div>
-                        <span>März 2026</span>
-                    </div>
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2025_12.jpg');"></div>
-                        <span>Dezember 2025</span>
-                    </div>
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2025_09.jpg');"></div>
-                        <span>September 2025</span>
-                    </div>
-                    <div class="archive-item">
-                        <div class="archive-cover" style="background-image: url('assets/cover_2025_07.jpg');"></div>
-                        <span>Juli 2025</span>
-                    </div>
+        <!-- SEKTION 4: KONTAKT & IMPRESSUM -->
+        <section id="kontakt" class="section bg-light" style="border-top: 1px solid #e0d8cd;">
+            <div class="container" style="max-width: 800px;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 class="section-title">Kontakt &amp; Impressum</h2>
+                    <p style="color: #666;">
+                        Herausgeber und Ansprechpartner für <em>Mensch und Land</em> sowie die <em>Tollensetaler Stimme</em>:
+                    </p>
                 </div>
-                <div class="center-btn">
-                    <a href="https://mensch-und-land.de/" target="_blank" class="btn btn-secondary">Zum kompletten Archiv auf mensch-und-land.de</a>
+
+                <div style="background: white; padding: 2.5rem; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8;">
+                    <p><strong>Herausgeber:</strong> Olaf Spillner</p>
+                    <p><strong>Adresse:</strong> Hohenbüssow 1, 17129 Alt Tellin (Mecklenburg-Vorpommern)</p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:info@tollensetal.org" style="font-weight: 600;">info@tollensetal.org</a></p>
+                    <p><strong>Partner-Initiative:</strong> Bürgerinitiative „Leben am Tollensetal“</p>
+                    <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;">
+                    <p style="font-size: 0.85rem; color: #777;">
+                        <strong>Hinweis zum Datenschutz:</strong> Diese Webpräsenz dient ausschließlich der Information und Archivierung regionaler Kultur- und Zeitdokumente. Wir setzen bewusst keine Tracking-Cookies, keine Analysedienste und keine Werbenetzwerke ein.
+                    </p>
                 </div>
             </div>
         </section>
+
     </main>
 
+    <!-- MODAL FÜR ARTIKEL-LESEN -->
+    <div class="modal-overlay" id="articleModal" onclick="closeModalOnBg(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalBody" class="modal-body">
+                <!-- Dynamischer Inhalt via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
-                <h3>Mensch & Land</h3>
-                <p>Leben am Tollensetal.</p>
+                <h3>Mensch &amp; Land</h3>
+                <p>Kultur, Natur und Landleben am Tollensetal.</p>
             </div>
             <div class="footer-links">
-                <a href="#">Impressum</a>
-                <a href="#">Datenschutz</a>
-                <a href="#">Kontakt</a>
+                <a href="#archiv">Magazin-Archiv</a>
+                <a href="#themen">Themen</a>
+                <a href="#ueber-uns">Über uns</a>
+                <a href="#kontakt">Kontakt &amp; Impressum</a>
             </div>
+        </div>
+        <div class="container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.8rem;">
+            © Mensch und Land · Herausgeber Olaf Spillner · Alt Tellin / Hohenbüssow
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- SCRIPT FÜR NAVIGATION & MODAL -->
+    <script>
+        // Navbar Scroll-Effekt
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenuBtn.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = '#2c1b18';
+                navLinks.style.padding = '1.5rem';
+            }
+        });
+
+        // Artikel-Texte für Schnellleser
+        const articleData = {
+            'alt-tellin': {
+                tag: 'Agrar & Widerstand',
+                title: 'Ferkelfabrik Alt Tellin: Chronik des Widerstands & Großbrand',
+                content: `
+                    <p class="modal-meta">Dokumentation aus der Tollensetaler Stimme</p>
+                    <h2>Ferkelfabrik Alt Tellin: Vom Beginn bis zur Brandkatastrophe</h2>
+                    <p>Im Jahr 2006 erschien den Einwohnern der Gemeinde Alt Tellin auf der Ratsversammlung in der Storchenbar der niederländische Großinvestor Adrianus Straathof. Draußen vor der Tür wurde erstmals demonstriert: gegen den Plan, am idyllischen Tollensetal eine Ferkelfabrik für über 10.000 Sauen und Hunderttausende Ferkel pro Jahr errichten zu lassen.</p>
+                    <p>Damit begann ein über 15 Jahre währender bürgerschaftlicher Widerstand. Seit 2011 hielten Mitglieder und Sympathisanten der Bürgerinitiative „Rettet das Landleben am Tollensetal“ jeden Montag eine ununterbrochene Mahnwache vor den Toren der Anlage ab – bei Wind und Wetter, Sommer wie Winter.</p>
+                    <p>Im März 2021 bewahrheiteten sich die schlimmsten Befürchtungen der Kritiker: Ein verheerender Großbrand zerstörte die Anlage fast vollständig. Über 50.000 Tiere kamen in den Flammen um. Die <em>Katastrophenausgabe der Tollensetaler Stimme (2021-04)</em> dokumentierte dieses Desaster als Mahnmal gegen industrielle Tierqual und Fehlentscheidungen der Landespolitik.</p>
+                    <p style="margin-top: 1.5rem;"><a href="assets/pdfs/2584_Tollensetaler-Stimme-2021-04-Katastrophenausgabe.pdf" target="_blank" class="btn btn-primary">Katastrophenheft als PDF öffnen (3,5 MB)</a></p>
+                `
+            },
+            'broock': {
+                tag: 'Kultur & Denkmal',
+                title: 'Schlossanlage Broock: Auferstehung aus Ruinen',
+                content: `
+                    <p class="modal-meta">Kulturgeschichte Tollensetal</p>
+                    <h2>Schlossanlage Broock: Hoffnung für ein Baudenkmal</h2>
+                    <p>Die kleinen Bahnhöfe an der alten Nordbahn zwischen Berlin und Stralsund waren lange Zeit ruinös – kaum anders als die leerstehenden Schlösser und Gutshäuser Vorpommerns. Doch am Tollensetal wendete sich das Blatt: Vor wenigen Jahren traf sich eine engagierte Interessengruppe zur Rettung und kulturellen Belebung der Broocker Gutsanlage.</p>
+                    <p>Das ehrenamtlich betriebene Spenden-„GartenCafé“ vor dem Baubüro der Schlossanlage etablierte sich rasch als beliebter Treffpunkt für Einheimische, Wanderer und Radfahrer. Mit Mitteln der Bundesbeauftragten für Kultur und Medien und des Landesamtes für Denkmalpflege begann die bauliche Sicherung des Ensembles.</p>
+                    <p>Ziel ist es, Broock zu einem nachhaltigen, überregionalen Zentrum für Konzerte, Kultur und Veranstaltungen zu entwickeln – zentral angebunden über den nahegelegenen Bahnhof Sternfeld. Ein lebendiger Gegenentwurf zum industriellen Ausverkauf des ländlichen Raumes.</p>
+                `
+            },
+            'klempenow': {
+                tag: 'Kultur & Begegnung',
+                title: 'Burg Klempenow: KulturTransit 96 e.V.',
+                content: `
+                    <p class="modal-meta">Kultur an der Tollense</p>
+                    <h2>26 Jahre Kulturort Burg Klempenow</h2>
+                    <p>„Der Weg aus den Leitplanken, zurück zur Kultur“ – unter diesem Leitsatz startete der Verein KulturTransit 96 e.V. seinen Weg an die Öffentlichkeit. Die historische Wehranlage an der Tollense, einst Ruine, entwickelte sich Schritt für Schritt zu einem weithin geschätzten Anziehungspunkt.</p>
+                    <p>Von den legendären Appel- und Adventsmärkten über das <em>TRANSIT FESTIVAL</em> und das Filmfest <em>„der NEUE HEIMAT film“</em> bis hin zu Poesiesalons und Kräutertagen im Burggarten: Klempenow ist der Beweis, dass Kultur auf dem Lande selbstbestimmt, offen und lebendig blühen kann.</p>
+                `
+            },
+            'umwelt': {
+                tag: 'Natur & Tollensetal',
+                title: 'Wasser, Wegebau & Wiesenbrüter',
+                content: `
+                    <p class="modal-meta">Ökologie & Landschaftspflege</p>
+                    <h2>Das Tollensetal als bedrohter Lebensraum</h2>
+                    <p>Die Tollense schlängelt sich durch eine der reizvollsten Flussniederungen Norddeutschlands. Doch das Einzugsgebiet wird intensiv landwirtschaftlich bewirtschaftet. Enorme Nährstoffeinträge und Gülleausbringung belasten das Gewässersystem und erzwingen regelmäßige Krautungsmaßnahmen.</p>
+                    <p>Gleichzeitig ist das Tal Rastplatz für Tausende Kraniche und Brutstätte bedrohter Wiesenbrüter. Renaturierungsmaßnahmen und ein besonnener ländlicher Wegebau (wie die Sanierung der Straße zwischen Buchholz und Neubuchholz) zeigen, worauf es ankommt: Infrastruktur für die Bewohner, ohne die Natur zu zerstören.</p>
+                `
+            }
+        };
+
+        function openModal(articleKey) {
+            const data = articleData[articleKey];
+            if (!data) return;
+            const modalBody = document.getElementById('modalBody');
+            modalBody.innerHTML = data.content;
+            document.getElementById('articleModal').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('articleModal').classList.remove('open');
+        }
+
+        function closeModalOnBg(event) {
+            if (event.target === document.getElementById('articleModal')) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>
