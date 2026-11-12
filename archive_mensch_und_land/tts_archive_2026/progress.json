@@ -1,0 +1,30 @@
+{
+  "done_pages": [],
+  "done_covers": [],
+  "failed": [
+    {
+      "id": "3060",
+      "type": "page",
+      "url": "https://web.archive.org/web/20260207190933id_/https://mensch-und-land.de/tts/tollensetaler-stimme-2025-12-adventsausgabe/",
+      "status": 999
+    },
+    {
+      "id": "3060",
+      "type": "cover",
+      "url": "https://web.archive.org/web/20260207190933id_/https://mensch-und-land.de/wp-content/uploads/2025/12/pdf-3060-page-00001-212x300.jpg",
+      "status": 999
+    },
+    {
+      "id": "3055",
+      "type": "page",
+      "url": "https://web.archive.org/web/20260207190933id_/https://mensch-und-land.de/tts/tollensetaler-stimme-2025-09/",
+      "status": 999
+    },
+    {
+      "id": "3055",
+      "type": "cover",
+      "url": "https://web.archive.org/web/20260207190933id_/https://mensch-und-land.de/wp-content/uploads/2025/09/pdf-3055-page-00001-212x300.jpg",
+      "status": 999
+    }
+  ]
+}

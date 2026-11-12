@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensch und Land – Tollensetaler Stimme</title>
-    <meta name="description" content="Kultur- und Regionalmagazin für das Tollensetal von Olaf Spillner (Alt Tellin / Hohenbüssow). Archiv aller 20 Ausgaben der Tollensetaler Stimme und Dokumentation zu Natur, Kultur und Landleben.">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Mensch und Land – Tollensetaler Stimme (Gesamtarchiv 2009–2026)</title>
+    <meta name="description" content="Kultur- und Regionalmagazin für das Tollensetal. Vollständiges Archiv aller 76 Ausgaben der Tollensetaler Stimme (2009–2026) und aller Themenseiten.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,18 +13,20 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">Mensch &amp; Land</a>
-            <div class="nav-links">
-                <a href="#archiv">Magazin-Archiv (TTS)</a>
-                <a href="#themen">Themen &amp; Artikel</a>
-                <a href="#ueber-uns">Über das Projekt</a>
-                <a href="#kontakt">Kontakt &amp; Impressum</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#archiv">Magazin-Archiv (76)</a>
+                <a href="themen/index.html">Themen (56)</a>
+                <a href="beitraege/index.html">Beiträge (21)</a>
+                <a href="termine/index.html">Termine</a>
+                <a href="ade/index.html">Forum</a>
+                <a href="#kontakt">Impressum</a>
             </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">☰</button>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero" style="background-image: linear-gradient(rgba(26, 16, 14, 0.65), rgba(26, 16, 14, 0.75)), url('assets/hero_tollense.jpg'); background-size: cover; background-position: center;">
+    <header class="hero" style="background-image: linear-gradient(rgba(26, 16, 14, 0.65), rgba(26, 16, 14, 0.78)), url('assets/hero_tollense.jpg'); background-size: cover; background-position: center;">
         <div class="hero-content">
             <span class="fade-in" style="display:inline-block; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; color: #e4c575; margin-bottom: 0.75rem; font-weight: 600;">
                 Kultur- &amp; Regionalmagazin · Alt Tellin / Hohenbüssow
@@ -39,8 +36,9 @@
                 „Landleben – Geschichte und Zukunft einer gefährdeten Kulturform.“
             </p>
             <div class="fade-in delay-2" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#archiv" class="btn btn-primary">Ausgaben als PDF lesen</a>
-                <a href="#themen" class="btn btn-secondary">Artikel &amp; Dokumente</a>
+                <a href="#archiv" class="btn btn-primary">Alle 76 Ausgaben (2009–2026)</a>
+                <a href="assets/pdfs/3083_Tollensetaler-Stimme-2026-08.pdf" target="_blank" class="btn btn-secondary" style="color:#fff;border-color:rgba(255,255,255,0.75);">Aktuellste Ausgabe (2026) öffnen</a>
+                <a href="themen/index.html" class="btn btn-secondary" style="color:#fff;border-color:rgba(255,255,255,0.75);">Alle 56 Themenseiten</a>
             </div>
         </div>
     </header>
@@ -49,431 +47,1260 @@
 
         <!-- INTRO CALLOUT -->
         <section style="background-color: #f7f3ee; border-bottom: 1px solid #e5ded3; padding: 2.5rem 0;">
-            <div class="container" style="max-width: 900px; text-align: center;">
+            <div class="container" style="max-width: 920px; text-align: center;">
                 <p style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-darker); line-height: 1.6; margin-bottom: 0.5rem;">
-                    Willkommen im Online-Archiv von <strong>Mensch und Land</strong> und der <strong>Tollensetaler Stimme</strong>.
+                    Vollständiges Online-Archiv von <strong>Mensch und Land</strong> und der <strong>Tollensetaler Stimme</strong>.
                 </p>
                 <p style="color: #666; font-size: 1rem;">
-                    Herausgegeben von <strong>Olaf Spillner</strong> seit August 2009. Eine unabhängige Chronik über das Landleben im Tollensetal, den Widerstand gegen industrielle Tierhaltung, das Wiederaufleben der Broocker Schlossanlage und das lebendige Kulturgut unserer Heimat.
+                    Seit August 2009. Bewahrt als wartungsfreie statische Website mit allen 76 Heften, 56 Themenseiten, 21 Beiträgen und dem historischen Forum.
                 </p>
             </div>
         </section>
 
-        <!-- SEKTION 1: DAS MAGAZIN-ARCHIV (ALLE 20 AUSGABEN) -->
+        <!-- SEKTION 1: DAS MAGAZIN-ARCHIV (ALLE 76 AUSGABEN) -->
         <section id="archiv" class="section">
             <div class="container">
-                <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
-                    <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Chronik 2020 – 2025</span>
+                <div style="text-align: center; max-width: 820px; margin: 0 auto 2rem;">
+                    <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Chronik August 2009 – August 2026</span>
                     <h2 class="section-title">Archiv der Tollensetaler Stimme</h2>
                     <p style="color: #666; font-size: 1.05rem;">
-                        Hier finden Sie die 20 Ausgaben unseres Magazins. Die vorhandenen Hefte können direkt im Browser geöffnet oder als PDF heruntergeladen werden.
+                        Alle 76 Ausgaben sind vollständig als PDF hinterlegt und können direkt im Browser gelesen oder heruntergeladen werden.
                     </p>
                 </div>
 
-                <!-- Magazin Grid (20 Ausgaben) -->
-                <div class="archive-grid">
+                <div class="filter-tabs" id="issueFilters">
+                    <button class="tab-btn active" data-period="all">Alle (76)</button>
+                    <button class="tab-btn" data-period="2024-2026">2024–2026 (10)</button>
+                    <button class="tab-btn" data-period="2021-2023">2021–2023 (10)</button>
+                    <button class="tab-btn" data-period="2018-2020">2018–2020 (17)</button>
+                    <button class="tab-btn" data-period="2009-2017">2009–2017 (39)</button>
+                </div>
 
-                    <!-- Ausgabe 20: 2025-12 -->
-                    <div class="issue-card">
+                <div class="archive-grid" id="archiveGrid">
+                    
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3083_cover.jpg" alt="Tollensetaler Stimme 2026-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2026-08</h3>
+                                <p class="issue-meta">August 2026 (5,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/3083_Tollensetaler-Stimme-2026-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (5,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3071_cover.jpg" alt="Tollensetaler Stimme 2026-06" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2026-06</h3>
+                                <p class="issue-meta">Juni 2026 (3,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/3071_Tollensetaler-Stimme-2026-06.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/3065_cover.jpg" alt="Tollensetaler Stimme 2026-01" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2026-01</h3>
+                                <p class="issue-meta">Januar 2026 (2,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/3065_Tollensetaler-Stimme-2026-01.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3060_cover.jpg" alt="Tollensetaler Stimme 2025-12 Adventsausgabe" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2025-12</h3>
-                                <p class="issue-meta">Adventsausgabe · Dezember 2025</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2025-12 Adventsausgabe</h3>
+                                <p class="issue-meta">Adventsausgabe · Dezember 2025 (2,8 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3060_Tollensetaler-Stimme-2025-12-Adventsausgabe.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,8 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 19: 2025-09 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3055_cover.jpg" alt="Tollensetaler Stimme 2025-09" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2025-09</h3>
-                                <p class="issue-meta">Spätsommer · September 2025</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2025-09</h3>
+                                <p class="issue-meta">September 2025 (3,1 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3055_Tollensetaler-Stimme-2025-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,1 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 18: 2025-07 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3048_cover.jpg" alt="Tollensetaler Stimme 2025-07" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2025-07</h3>
-                                <p class="issue-meta">Sommerheft · Juli 2025</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2025-07</h3>
+                                <p class="issue-meta">Juli 2025 (2,9 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3048_Tollensetaler-Stimme-2025-07.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,9 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 17: 2025-01 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3042_cover.jpg" alt="Tollensetaler Stimme 2025-01" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2025-01</h3>
-                                <p class="issue-meta">Neujahrsausgabe · Januar 2025</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2025-01</h3>
+                                <p class="issue-meta">Januar 2025 (2,7 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3042_Tollensetaler-Stimme-2025-01.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,7 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 16: 2024-12 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3036_cover.jpg" alt="Tollensetaler Stimme 2024-12" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2024-12</h3>
-                                <p class="issue-meta">Winterausgabe · Dezember 2024</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2024-12</h3>
+                                <p class="issue-meta">Dezember 2024 (2,2 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3036_Tollensetaler-Stimme-2024-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,2 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 15: 2024-08 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3028_cover.jpg" alt="Tollensetaler Stimme 2024-08" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Ausgabe 2024-08</h3>
-                                <p class="issue-meta">Sommerheft · August 2024</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2024-08</h3>
+                                <p class="issue-meta">August 2024 (2,4 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/3028_Tollensetaler-Stimme-2024-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,4 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 14: 2024-04 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2024-2026" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3022_cover.jpg" alt="Tollensetaler Stimme 2024-04" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2024-04</h3>
-                                <p class="issue-meta">Frühjahr · April 2024 (3,2 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2024-04</h3>
+                                <p class="issue-meta">April 2024 (3,0 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/3022_Tollensetaler-Stimme-2024-04.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/3022_Tollensetaler-Stimme-2024-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,0 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 13: 2023-12 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/3011_cover.jpg" alt="Tollensetaler Stimme 2023-12" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2023-12</h3>
-                                <p class="issue-meta">Jahresabschluss · Dez. 2023 (6,9 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2023-12</h3>
+                                <p class="issue-meta">Dezember 2023 (6,6 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/3011_Tollensetaler-Stimme-2023-12.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/3011_Tollensetaler-Stimme-2023-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (6,6 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 12: 2023-03 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2816_cover.jpg" alt="Tollensetaler Stimme 2023-03" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2023-03</h3>
-                                <p class="issue-meta">Frühlingsheft · März 2023 (2,6 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2023-03</h3>
+                                <p class="issue-meta">März 2023 (2,5 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2816_Tollensetaler-Stimme-2023-03.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2816_Tollensetaler-Stimme-2023-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,5 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 11: 2022 Radebeuler Jubiläumsausgabe -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2799_cover.jpg" alt="Tollensetaler Stimme 2022 Radebeuler Jubiläumsausgabe" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
-                                <h3 class="issue-title">Radebeuler Jubiläum</h3>
-                                <p class="issue-meta">Sonderausgabe · 2022</p>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2022 Radebeuler Jubiläumsausgabe</h3>
+                                <p class="issue-meta">Jubiläumsausgabe · September 2022 (3,3 MB)</p>
                             </div>
                             <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
+                                <a href="assets/pdfs/2799_Tollensetaler-Stimme-2022-Radebeuler-Jubilaeumsausgabe.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,3 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 10: 2022-09 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
-                            <img src="assets/covers/2791_cover.jpg" alt="Tollensetaler Stimme 2022-09" class="issue-cover-img" loading="lazy">
+                            <img src="assets/covers/2791_cover.jpg" alt="Tollensetaler-Stimme-2022-09" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2022-09</h3>
-                                <p class="issue-meta">Herbst · September 2022 (1,7 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler-Stimme-2022-09</h3>
+                                <p class="issue-meta">September 2022 (1,6 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2791_Tollensetaler-Stimme-2022-09.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2791_Tollensetaler-Stimme-2022-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 9: 2022-08 -->
-                    <div class="issue-card">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
-                            <img src="assets/covers/2775_cover.jpg" alt="Tollensetaler Stimme 2022-08" class="issue-cover-img" loading="lazy">
-                        </div>
-                        <div class="issue-details">
-                            <div>
-                                <h3 class="issue-title">Ausgabe 2022-08</h3>
-                                <p class="issue-meta">Sommerheft · August 2022</p>
-                            </div>
-                            <div>
-                                <span class="btn-pending-notice">Cover archiviert · PDF folgt</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ausgabe 8: 2022-03 Jubiläumsausgabe (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
-                        <div class="issue-cover-wrap">
-                            <img src="assets/covers/2705_cover.jpg" alt="Tollensetaler Stimme 2022-03 Jubiläumsausgabe" class="issue-cover-img" loading="lazy">
+                            <img src="assets/covers/2775_cover.jpg" alt="Tollensetaler-Stimme-2022-08" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Jubiläum 2022-03</h3>
-                                <p class="issue-meta">Jubiläumsausgabe (1,9 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler-Stimme-2022-08</h3>
+                                <p class="issue-meta">August 2022 (2,0 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2705_Tollensetaler-Stimme-2022-03.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2775_Tollensetaler-Stimme-2022-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,0 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 7: 2021-12 Adventsausgabe (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2705_cover.jpg" alt="Tollensetaler Stimme 2022-03 Jubiläumsausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2022-03 Jubiläumsausgabe</h3>
+                                <p class="issue-meta">Jubiläumsausgabe · März 2022 (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2705_Tollensetaler-Stimme-2022-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2679_cover.jpg" alt="Tollensetaler Stimme 2021-12 Adventsausgabe" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-12</h3>
-                                <p class="issue-meta">Adventsausgabe (13,2 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2021-12 Adventsausgabe</h3>
+                                <p class="issue-meta">Adventsausgabe · Dezember 2021 (12,6 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2679_Tollensetaler-Stimme-2021-12-fixed.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2679_Tollensetaler-Stimme-2021-12-fixed.pdf" target="_blank" class="btn-pdf">PDF öffnen (12,6 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 6: 2021-07 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2624_cover.jpg" alt="Tollensetaler Stimme 2021-07" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-07</h3>
-                                <p class="issue-meta">Sommer · Juli 2021 (2,2 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2021-07</h3>
+                                <p class="issue-meta">Juli 2021 (2,1 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2624_Tollensetaler-Stimme-2021-07.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2624_Tollensetaler-Stimme-2021-07.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,1 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 5: 2021-04 Katastrophenausgabe Großbrand (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: #821a00; border-width: 2px;">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: #821a00; border-width: 2px;">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2584_cover.jpg" alt="Tollensetaler Stimme 2021 Katastrophenausgabe" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf" style="background: #ffebee; color: #c62828; border: 1px solid #ffcdd2;">Dokumentation</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Katastrophenheft 2021</h3>
-                                <p class="issue-meta">Großbrand Alt Tellin (3,5 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2021 Katastrophenausgabe</h3>
+                                <p class="issue-meta">Großbrand Alt Tellin · April 2021 (3,3 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2584_Tollensetaler-Stimme-2021-04-Katastrophenausgabe.pdf" target="_blank" class="btn-pdf" style="background-color: #821a00;">PDF herunterladen</a>
+                                <a href="assets/pdfs/2584_Tollensetaler-Stimme-2021-04-Katastrophenausgabe.pdf" target="_blank" class="btn-pdf" style="background-color: #821a00;">PDF öffnen (3,3 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 4: 2021-01 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2021-2023" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2574_cover.jpg" alt="Tollensetaler Stimme 2021-01" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2021-01</h3>
-                                <p class="issue-meta">Winter · Januar 2021 (1,0 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2021-01</h3>
+                                <p class="issue-meta">Januar 2021 (1,9 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2574_Tollensetaler-Stimme-2021-01.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2574_Tollensetaler-Stimme-2021-01.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 3: 2020-12 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2564_cover.jpg" alt="Tollensetaler Stimme 2020-12" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2020-12</h3>
-                                <p class="issue-meta">Weihnachtsheft · Dez. 2020 (2,5 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2020-12</h3>
+                                <p class="issue-meta">Dezember 2020 (2,4 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2564_Tollensetaler-Stimme-2020-12.pdf.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2564_Tollensetaler-Stimme-2020-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,4 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 2: 2020-10 (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2548_cover.jpg" alt="Tollensetaler Stimme 2020-10" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Ausgabe 2020-10</h3>
-                                <p class="issue-meta">Herbst · Oktober 2020 (1,0 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2020-10</h3>
+                                <p class="issue-meta">Oktober 2020 (1,7 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2548_Tollensetaler-Stimme-2020-10.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2548_Tollensetaler-Stimme-2020-10.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,7 MB)</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Ausgabe 1: 2020-08 Extrablatt (PDF VORHANDEN!) -->
-                    <div class="issue-card" style="border-color: rgba(130, 26, 0, 0.3);">
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
                         <div class="issue-cover-wrap">
                             <img src="assets/covers/2540_cover.jpg" alt="Tollensetaler Stimme Extrablatt 2020-08" class="issue-cover-img" loading="lazy">
                         </div>
                         <div class="issue-details">
                             <div>
                                 <span class="badge-pdf badge-available">PDF verfügbar</span>
-                                <h3 class="issue-title" style="margin-top: 0.35rem;">Extrablatt 2020-08</h3>
-                                <p class="issue-meta">Erste Ausgabe · August 2020 (2,3 MB)</p>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme Extrablatt 2020-08</h3>
+                                <p class="issue-meta">Extrablatt · August 2020 (2,2 MB)</p>
                             </div>
                             <div>
-                                <a href="assets/pdfs/2540_Tollensetaler-Stimme-2020-08-Extrablatt.pdf" target="_blank" class="btn-pdf">PDF herunterladen</a>
+                                <a href="assets/pdfs/2540_Tollensetaler-Stimme-2020-08-Extrablatt.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,2 MB)</a>
                             </div>
                         </div>
                     </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2526_cover.jpg" alt="Tollensetaler Stimme 2020-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2020-07</h3>
+                                <p class="issue-meta">Juli 2020 (2,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2526_Tollensetaler-Stimme-2020-07-einseitig.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2509_cover.jpg" alt="Tollensetaler Stimme 2020-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2020-04</h3>
+                                <p class="issue-meta">April 2020 (3,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2509_Tollensetaler-Stimme-2020-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2471_cover.jpg" alt="Tollensetaler Stimme 2020-02" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2020-02</h3>
+                                <p class="issue-meta">Februar 2020 (4,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2471_Tollensetaler-Stimme-2020-02.pdf" target="_blank" class="btn-pdf">PDF öffnen (4,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2439_cover.jpg" alt="Tollensetaler Stimme 2019-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-12</h3>
+                                <p class="issue-meta">Dezember 2019 (3,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2439_Tollensetaler-Stimme-2019-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,3 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2430_cover.jpg" alt="Tollensetaler Stimme 2019-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-09</h3>
+                                <p class="issue-meta">September 2019 (3,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2430_Tollensetaler-Stimme-2019-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2398_cover.jpg" alt="Tollensetaler Stimme 2019-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-07</h3>
+                                <p class="issue-meta">Juli 2019 (3,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2398_tts-4-2019-red.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2373_cover.jpg" alt="Tollensetaler Stimme 2019-05" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-05</h3>
+                                <p class="issue-meta">Mai 2019 (3,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2373_Tollensetaler-Stimme-2019-05.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2348_cover.jpg" alt="Tollensetaler Stimme 2019-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-04</h3>
+                                <p class="issue-meta">April 2019 (1,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2348_Tollensetaler-Stimme-2019-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/2314_cover.jpg" alt="Tollensetaler Stimme 2019-02" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2019-02</h3>
+                                <p class="issue-meta">Februar 2019 (5,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/2314_Tollensetaler-Stimme-2019-02.pdf" target="_blank" class="btn-pdf">PDF öffnen (5,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/1822_cover.jpg" alt="Tollensetaler Stimme 2018-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2018-12</h3>
+                                <p class="issue-meta">Dezember 2018 (2,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/1822_Tollensetaler-Stimme-2018-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,3 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/451_cover.jpg" alt="Tollensetaler Stimme 2018-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2018-09</h3>
+                                <p class="issue-meta">September 2018 (3,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/451_Tollensetaler-Stimme-2018-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/432_cover.jpg" alt="Tollensetaler Stimme 2018-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2018-07</h3>
+                                <p class="issue-meta">Juli 2018 (2,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/432_Tollensetaler-Stimme-2018-07.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/430_cover.jpg" alt="Tollensetaler Stimme 2018-05" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2018-05</h3>
+                                <p class="issue-meta">Mai 2018 (3,4 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/430_Tollensetaler-Stimme-2018-05.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,4 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2018-2020" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/428_cover.jpg" alt="Tollensetaler Stimme 2018-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2018-03</h3>
+                                <p class="issue-meta">März 2018 (3,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/428_Tollensetaler-Stimme-2018-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/426_cover.jpg" alt="Tollensetaler Stimme 2017-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2017-12</h3>
+                                <p class="issue-meta">Dezember 2017 (3,4 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/426_Tollensetaler-Stimme-2017-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,4 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/424_cover.jpg" alt="Tollensetaler Stimme 2017-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2017-09</h3>
+                                <p class="issue-meta">September 2017 (2,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/424_Tollensetaler-Stimme-2017-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,2 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/422_cover.jpg" alt="Tollensetaler Stimme 2017-06" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2017-06</h3>
+                                <p class="issue-meta">Juni 2017 (0,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/422_Tollensetaler-Stimme-2017-06.pdf" target="_blank" class="btn-pdf">PDF öffnen (0,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/420_cover.jpg" alt="Tollensetaler Stimme 2017-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2017-03</h3>
+                                <p class="issue-meta">März 2017 (1,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/420_Tollensetaler-Stimme-2017-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/418_cover.jpg" alt="Tollensetaler Stimme 2016-12-Extrablatt" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2016-12-Extrablatt</h3>
+                                <p class="issue-meta">Extrablatt · Dezember 2016 (3,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/418_Tollensetaler-Stimme-2016-12-Extrablatt.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/416_cover.jpg" alt="Tollensetaler Stimme 2016-11" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2016-11</h3>
+                                <p class="issue-meta">November 2016 (2,4 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/416_Tollensetaler-Stimme-2016-11.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,4 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/412_cover.jpg" alt="Tollensetaler Stimme 2016-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2016-09</h3>
+                                <p class="issue-meta">September 2016 (1,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/412_Tollensetaler-Stimme-2016-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,3 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/410_cover.jpg" alt="Tollensetaler Stimme 2016-07" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2016-07</h3>
+                                <p class="issue-meta">Juli 2016 (2,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/410_Tollensetaler-Stimme-2016-07.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/1105_cover.jpg" alt="Tollensetaler Stimme 2016-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2016-03</h3>
+                                <p class="issue-meta">März 2016 (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/1105_Tollensetaler-Stimme-2016-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/406_cover.jpg" alt="Tollensetaler Stimme 2015-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2015-12</h3>
+                                <p class="issue-meta">Dezember 2015 (1,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/406_Tollensetaler-Stimme-2015-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/404_cover.jpg" alt="Tollensetaler Stimme 2015-10" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2015-10</h3>
+                                <p class="issue-meta">Oktober 2015 (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/404_Tollensetaler-Stimme-2015-10.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/1076_cover.jpg" alt="Tollensetaler Stimme 2015-06" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2015-06</h3>
+                                <p class="issue-meta">Juni 2015 (1,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/1076_Tollensetaler-Stimme-2015-06.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/400_cover.jpg" alt="Tollensetaler Stimme 2015-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2015-03</h3>
+                                <p class="issue-meta">März 2015 (0,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/400_Tollensetaler-Stimme-2015-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (0,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/398_cover.jpg" alt="Tollensetaler Stimme 2014-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2014-12</h3>
+                                <p class="issue-meta">Dezember 2014 (1,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/398_Tollensetaler-Stimme-2014-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/396_cover.jpg" alt="Tollensetaler Stimme 2014-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2014-09</h3>
+                                <p class="issue-meta">September 2014 (1,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/396_Tollensetaler-Stimme-2014-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/394_cover.jpg" alt="Tollensetaler Stimme 2014-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2014-04</h3>
+                                <p class="issue-meta">April 2014 (2,7 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/394_Tollensetaler-Stimme-2014-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,7 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/392_cover.jpg" alt="Tollensetaler Stimme 2013-Sonderausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2013-Sonderausgabe</h3>
+                                <p class="issue-meta">Sonderausgabe · 2013 (0,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/392_Tollensetaler-Stimme-2013-Sonderausgabe.pdf" target="_blank" class="btn-pdf">PDF öffnen (0,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/388_cover.jpg" alt="Tollensetaler Stimme 2013-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2013-12</h3>
+                                <p class="issue-meta">Dezember 2013 (1,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/388_Tollensetaler-Stimme-2013-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/386_cover.jpg" alt="Tollensetaler Stimme 2013-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2013-09</h3>
+                                <p class="issue-meta">September 2013 (1,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/386_Tollensetaler-Stimme-2013-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/384_cover.jpg" alt="Tollensetaler Stimme 2013-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2013-03</h3>
+                                <p class="issue-meta">März 2013 (2,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/384_Tollensetaler-Stimme-2013-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/382_cover.jpg" alt="Tollensetaler Stimme 2012-Sonderausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2012-Sonderausgabe</h3>
+                                <p class="issue-meta">Sonderausgabe · 2012 (2,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/382_Tollensetaler-Stimme-2012-Sonderausgabe.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/380_cover.jpg" alt="Tollensetaler Stimme 2012-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2012-12</h3>
+                                <p class="issue-meta">Dezember 2012 (3,8 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/380_Tollensetaler-Stimme-2012-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,8 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/378_cover.jpg" alt="Tollensetaler Stimme 2012-10" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2012-10</h3>
+                                <p class="issue-meta">Oktober 2012 (1,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/378_Tollensetaler-Stimme-2012-10.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/376_cover.jpg" alt="Tollensetaler Stimme 2012-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2012-04</h3>
+                                <p class="issue-meta">April 2012 (1,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/376_Tollensetaler-Stimme-2012-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,3 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/374_cover.jpg" alt="Tollensetaler Stimme 2011-Sonderausgabe" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2011-Sonderausgabe</h3>
+                                <p class="issue-meta">Sonderausgabe · 2011 (3,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/374_Tollensetaler-Stimme-2011-Sonderausgabe.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/371_cover.jpg" alt="Tollensetaler Stimme 2011-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2011-12</h3>
+                                <p class="issue-meta">Dezember 2011 (4,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/371_Tollensetaler-Stimme-2011-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (4,2 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/446_cover.jpg" alt="Tollensetaler Stimme 2011-11" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2011-11</h3>
+                                <p class="issue-meta">November 2011 (1,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/446_Tollensetaler-Stimme-2011-11.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/444_cover.jpg" alt="Tollensetaler Stimme 2011-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2011-08</h3>
+                                <p class="issue-meta">August 2011 (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/444_Tollensetaler-Stimme-2011-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/442_cover.jpg" alt="Tollensetaler Stimme 2011-03" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2011-03</h3>
+                                <p class="issue-meta">März 2011 (1,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/442_Tollensetaler-Stimme-2011-03.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/368_cover.jpg" alt="Tollensetaler Stimme 2010-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-12</h3>
+                                <p class="issue-meta">Dezember 2010 (1,1 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/368_Tollensetaler-Stimme-2010-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,1 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/366_cover.jpg" alt="Tollensetaler Stimme 2010-11" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-11</h3>
+                                <p class="issue-meta">November 2010 (3,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/366_Tollensetaler-Stimme-2010-11.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/364_cover.jpg" alt="Tollensetaler Stimme 2010-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-08</h3>
+                                <p class="issue-meta">August 2010 (1,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/364_Tollensetaler-Stimme-2010-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/362_cover.jpg" alt="Tollensetaler Stimme 2010-06" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-06</h3>
+                                <p class="issue-meta">Juni 2010 (1,3 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/362_Tollensetaler-Stimme-2010-06.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,3 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/358_cover.jpg" alt="Tollensetaler Stimme 2010-04" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-04</h3>
+                                <p class="issue-meta">April 2010 (1,9 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/358_Tollensetaler-Stimme-2010-04.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,9 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/356_cover.jpg" alt="Tollensetaler Stimme 2010-02" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2010-02</h3>
+                                <p class="issue-meta">Februar 2010 (1,2 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/356_Tollensetaler-Stimme-2010-02.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,2 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/440_cover.jpg" alt="Tollensetaler Stimme 2009-12" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2009-12</h3>
+                                <p class="issue-meta">Dezember 2009 (3,0 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/440_Tollensetaler-Stimme-2009-12.pdf" target="_blank" class="btn-pdf">PDF öffnen (3,0 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/438_cover.jpg" alt="Tollensetaler Stimme 2009-11" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2009-11</h3>
+                                <p class="issue-meta">November 2009 (1,5 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/438_Tollensetaler-Stimme-2009-11.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,5 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/436_cover.jpg" alt="Tollensetaler Stimme 2009-09" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2009-09</h3>
+                                <p class="issue-meta">September 2009 (1,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/436_Tollensetaler-Stimme-2009-09.pdf" target="_blank" class="btn-pdf">PDF öffnen (1,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="issue-card" data-period="2009-2017" style="border-color: rgba(130, 26, 0, 0.25);">
+                        <div class="issue-cover-wrap">
+                            <img src="assets/covers/434_cover.jpg" alt="Tollensetaler Stimme 2009-08" class="issue-cover-img" loading="lazy">
+                        </div>
+                        <div class="issue-details">
+                            <div>
+                                <span class="badge-pdf badge-available">PDF verfügbar</span>
+                                <h3 class="issue-title" style="margin-top: 0.35rem;">Tollensetaler Stimme 2009-08</h3>
+                                <p class="issue-meta">August 2009 (2,6 MB)</p>
+                            </div>
+                            <div>
+                                <a href="assets/pdfs/434_Tollensetaler-Stimme-2009-08.pdf" target="_blank" class="btn-pdf">PDF öffnen (2,6 MB)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="archive-extra-box" style="margin-top: 3.5rem;">
+                    <h3>Weitere Dokumente &amp; Masterplan-Archiv</h3>
+                    <ul class="plain-link-list">
+                        <li><a href="assets/docs/Masterplan-work-in-progress-2012.pdf" target="_blank"><strong>Masterplan – Work in Progress (2012)</strong></a> <span>(1,2 MB)</span></li>
+<li><a href="assets/docs/Masterplan-Status-und-Entwicklungsbericht.pdf" target="_blank"><strong>Masterplan – Status- und Entwicklungsbericht</strong></a> <span>(1,8 MB)</span></li>
+<li><a href="assets/docs/Masterplan-kleine-Anrage-2013.pdf" target="_blank"><strong>Masterplan – Kleine Anfrage (2013)</strong></a> <span>(0,0 MB)</span></li>
+<li><a href="assets/docs/WEG-Stellungn-4_Beteilig.pdf" target="_blank"><strong>WEG-Stellungnahme (4. Beteiligung)</strong></a> <span>(2,2 MB)</span></li>
+<li><a href="assets/docs/offener-brief.pdf" target="_blank"><strong>Offener Brief (April 2021)</strong></a> <span>(0,4 MB)</span></li>
+<li><a href="assets/docs/090721-A-1-2-Bescheidung-der-Anträge-1.pdf" target="_blank"><strong>Bescheidung der Anträge (09.07.2021)</strong></a> <span>(0,2 MB)</span></li>
+<li><a href="assets/docs/100928-G-020_10-Alt-Tellin-J.pdf" target="_blank"><strong>Genehmigungsbescheid Alt Tellin (100928-G-020)</strong></a> <span>(0,9 MB)</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- SEKTION 2: DIE 4 GROSSEN THEMENFELDER DES MAGAZINS -->
+        <!-- SEKTION 2: THEMEN & ORIGINAL-ARCHIV -->
         <section id="themen" class="section bg-light">
             <div class="container">
                 <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
                     <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Dokumentation &amp; Lesestoff</span>
-                    <h2 class="section-title">Themen aus dem Magazin</h2>
+                    <h2 class="section-title">Themen &amp; Originaltexte</h2>
                     <p style="color: #666; font-size: 1.05rem;">
-                        Ausgewählte Berichte, Hintergründe und Dossiers aus über einem Jahrzehnt Engagement für Mensch, Natur und Kultur im Tollensetal.
+                        Direkter Zugang zu den wichtigsten Schwerpunkten – oder weiter zur vollständigen Übersicht aller 56 Original-Seiten und 21 Beiträge.
                     </p>
                 </div>
 
                 <div class="articles-grid">
-
-                    <!-- Thema 1: Alt Tellin & Agrar -->
                     <article class="card article-card">
                         <div class="card-img" style="background-image: url('assets/maisfeld_stoppeln.jpg');"></div>
                         <div class="card-content">
                             <span class="tag">Agrar &amp; Widerstand</span>
-                            <h3>Ferkelfabrik Alt Tellin: Chronik des Protests</h3>
+                            <h3>Fleisch &amp; Gülle · Mahnwache Alt Tellin</h3>
                             <p>
-                                Von der Ratssitzung 2006 über die montägliche Mahnwache bis hin zur Brandkatastrophe 2021: Die Geschichte des Bürgerwiderstands gegen industrielle Megaställe an der Tollense.
+                                Vom Beginn des Protests gegen die industrielle Sauenanlage über die wöchentlichen Mahnwachen bis zur Katastrophe 2021 und dem Infoarchiv.
                             </p>
-                            <button class="read-more" onclick="openModal('alt-tellin')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                            <a href="ferkel-guellefabrik/index.html" class="read-more">Themenseite öffnen →</a>
                         </div>
                     </article>
 
-                    <!-- Thema 2: Schloss Broock -->
                     <article class="card article-card">
                         <div class="card-img" style="background-image: url('assets/hero_tollense.jpg');"></div>
                         <div class="card-content">
                             <span class="tag">Kultur &amp; Denkmal</span>
-                            <h3>Schlossanlage Broock: Auferstehung aus Ruinen</h3>
+                            <h3>Schlossanlage Broock &amp; Sternfeld</h3>
                             <p>
-                                Wie ein aufgegebener, ruinöser Ort zum neuen Hoffnungsträger wurde. Bahnhof Sternfeld, das ehrenamtliche GartenCafé und die Zukunft als lebendiges Kulturzentrum.
+                                Geschichte, Gegenwart und Zukunft des denkmalgeschützten Gutshauses Broock am Tollensetal, GartenCafé und Bahnhof Sternfeld.
                             </p>
-                            <button class="read-more" onclick="openModal('broock')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                            <a href="schlossanlage-brock/index.html" class="read-more">Themenseite öffnen →</a>
                         </div>
                     </article>
 
-                    <!-- Thema 3: Burg Klempenow -->
                     <article class="card article-card">
                         <div class="card-img" style="background-image: url('assets/wanderpoeten.jpg');"></div>
                         <div class="card-content">
                             <span class="tag">Kultur &amp; Begegnung</span>
-                            <h3>Burg Klempenow: KulturTransit an der Tollense</h3>
+                            <h3>Burg Klempenow &amp; Poetenfrühstück</h3>
                             <p>
-                                „Der Weg aus den Leitplanken, zurück zur Kultur“: Über 25 Jahre Kultur-Transit 96 e.V., Poetenfrühstück, Appelmarkt und das TRANSIT FESTIVAL an der historischen Wehranlage.
+                                KulturTransit 96 e.V., Transit Festival, „der NEUE HEIMAT film“, Kulturgut Freiland und das Poetenfrühstück in Hohenbüssow.
                             </p>
-                            <button class="read-more" onclick="openModal('klempenow')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                            <a href="burg-klempenow/index.html" class="read-more">Themenseite öffnen →</a>
                         </div>
                     </article>
 
-                    <!-- Thema 4: Umwelt & Natur -->
                     <article class="card article-card">
                         <div class="card-img" style="background-image: url('assets/wegebau.jpg');"></div>
                         <div class="card-content">
                             <span class="tag">Natur &amp; Tollensetal</span>
-                            <h3>Wasser, Wegebau &amp; Wiesenbrüter</h3>
+                            <h3>Umwelt, Wasser, Boden &amp; Windkraft</h3>
                             <p>
-                                Zwischen intensiver Landwirtschaft und Renaturierung: Warum das Tollensetal konsequenten Schutz braucht, um Heimat für Mensch, Bienen und Kraniche zu bleiben.
+                                Beiträge zu Bienen, Wasserrahmenrichtlinie, Wegebau, Windkraft und ländlicher Infrastruktur im Landkreis Vorpommern-Greifswald.
                             </p>
-                            <button class="read-more" onclick="openModal('umwelt')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0;">Bericht lesen →</button>
+                            <a href="umwelt/index.html" class="read-more">Themenseite öffnen →</a>
                         </div>
                     </article>
+                </div>
 
+                <div class="center-btn" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem;">
+                    <a href="themen/index.html" class="btn btn-primary">Alle 56 Themenseiten ansehen</a>
+                    <a href="beitraege/index.html" class="btn btn-secondary">Alle 21 Blogbeiträge</a>
+                    <a href="termine/index.html" class="btn btn-secondary">Historische Termine (163)</a>
+                    <a href="ade/index.html" class="btn btn-secondary">Forum-Archiv (2013–2018)</a>
                 </div>
             </div>
         </section>
@@ -486,10 +1313,10 @@
                         <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Hintergrund</span>
                         <h2 class="section-title">Über Mensch und Land</h2>
                         <p>
-                            Wir berichten für Freunde, Bewohner und Gäste des Tollensetals seit August 2009. Damals in direktem Bezug zur ehemals größten Ferkelfabrik Europas in Alt Tellin – mit der Kraft der Landesregierung geplant und durchgedrückt für unsere Heimat.
+                            „Wir berichten für Freunde, Bewohner und Gäste des Tollensetals seit August 2009. Damals in direktem Bezug zur ehemals größten Ferkelfabrik Europas in Alt Tellin – mit der Kraft der Landesregierung geplant und durchgedrückt für unsere Heimat.“
                         </p>
                         <p>
-                            Inzwischen bekommt die Entwicklung des Tourismus am Tollensetal mit der Broocker Schlossanlage neben der Industrialisierung regenerativer Energien und landwirtschaftlicher Flächen wachsende Bedeutung.
+                            Dieses statische Gesamtarchiv bewahrt sämtliche Ausgaben der <em>Tollensetaler Stimme</em>, alle Original-Seiten, Blogbeiträge, historischen Termine und das Diskussionsforum dauerhaft und barrierefrei.
                         </p>
                         <p style="font-style: italic; border-left: 3px solid var(--color-primary); padding-left: 1rem; color: #444;">
                             „Unser Thema bleibt das Landleben. Ohne die Verantwortung der Städter für den ländlichen Raum wird jede urbane Perspektive im Desaster enden.“
@@ -497,12 +1324,20 @@
                     </div>
                     <div class="about-stats">
                         <div class="stat-box">
-                            <span class="stat-number">20</span>
-                            <span class="stat-label">Ausgaben Stimme</span>
+                            <span class="stat-number">76</span>
+                            <span class="stat-label">Ausgaben Stimme (PDF)</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-number">Seit 2009</span>
-                            <span class="stat-label">Stimme der Region</span>
+                            <span class="stat-number">2009–2026</span>
+                            <span class="stat-label">Chronik der Region</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">56</span>
+                            <span class="stat-label">Themenseiten</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">21</span>
+                            <span class="stat-label">Beiträge &amp; Essays</span>
                         </div>
                     </div>
                 </div>
@@ -520,29 +1355,22 @@
                 </div>
 
                 <div style="background: white; padding: 2.5rem; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8;">
-                    <p><strong>Herausgeber:</strong> Olaf Spillner</p>
+                    <p><strong>Verein / Herausgeber:</strong> 001 e.V. · Vertreten durch Olaf Spillner</p>
+                    <p><strong>Registereintrag:</strong> Amtsgericht Stralsund, Registernummer VR 5085</p>
                     <p><strong>Adresse:</strong> Hohenbüssow 1, 17129 Alt Tellin (Mecklenburg-Vorpommern)</p>
-                    <p><strong>E-Mail:</strong> <a href="mailto:info@tollensetal.org" style="font-weight: 600;">info@tollensetal.org</a></p>
-                    <p><strong>Partner-Initiative:</strong> Bürgerinitiative „Leben am Tollensetal“</p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:info@mensch-und-land.de" style="font-weight: 600;">info@mensch-und-land.de</a></p>
+                    <p><strong>Verwandte Archive:</strong> <a href="https://tollensetal.org">tollensetal.org (Erinnerungsarchiv)</a> · <a href="https://hohenbuessow.de">hohenbüssow.de</a></p>
                     <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;">
-                    <p style="font-size: 0.85rem; color: #777;">
-                        <strong>Hinweis zum Datenschutz:</strong> Diese Webpräsenz dient ausschließlich der Information und Archivierung regionaler Kultur- und Zeitdokumente. Wir setzen bewusst keine Tracking-Cookies, keine Analysedienste und keine Werbenetzwerke ein.
+                    <p style="font-size: 0.88rem; color: #666;">
+                        <a href="impressum/index.html">Vollständiges Original-Impressum</a> ·
+                        <a href="datenschutzerklaerung/index.html">Datenschutzerklärung</a> ·
+                        <em>Diese statische Website setzt keine Tracking-Cookies, keine Analyse-Tools und keine externen Schriftserver ein.</em>
                     </p>
                 </div>
             </div>
         </section>
 
     </main>
-
-    <!-- MODAL FÜR ARTIKEL-LESEN -->
-    <div class="modal-overlay" id="articleModal" onclick="closeModalOnBg(event)">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">×</button>
-            <div id="modalBody" class="modal-body">
-                <!-- Dynamischer Inhalt via JavaScript -->
-            </div>
-        </div>
-    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -553,110 +1381,18 @@
             </div>
             <div class="footer-links">
                 <a href="#archiv">Magazin-Archiv</a>
-                <a href="#themen">Themen</a>
-                <a href="#ueber-uns">Über uns</a>
-                <a href="#kontakt">Kontakt &amp; Impressum</a>
+                <a href="themen/index.html">Themen &amp; Seiten</a>
+                <a href="beitraege/index.html">Beiträge</a>
+                <a href="termine/index.html">Termine</a>
+                <a href="ade/index.html">Forum</a>
+                <a href="#kontakt">Impressum</a>
             </div>
         </div>
-        <div class="container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.8rem;">
-            © Mensch und Land · Herausgeber Olaf Spillner · Alt Tellin / Hohenbüssow
+        <div class="container footer-bottom">
+            © Mensch und Land · 001 e.V. · Alt Tellin / Hohenbüssow
         </div>
     </footer>
 
-    <!-- SCRIPT FÜR NAVIGATION & MODAL -->
-    <script>
-        // Navbar Scroll-Effekt
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.querySelector('.nav-links');
-        mobileMenuBtn.addEventListener('click', () => {
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = '#2c1b18';
-                navLinks.style.padding = '1.5rem';
-            }
-        });
-
-        // Artikel-Texte für Schnellleser
-        const articleData = {
-            'alt-tellin': {
-                tag: 'Agrar & Widerstand',
-                title: 'Ferkelfabrik Alt Tellin: Chronik des Widerstands & Großbrand',
-                content: `
-                    <p class="modal-meta">Dokumentation aus der Tollensetaler Stimme</p>
-                    <h2>Ferkelfabrik Alt Tellin: Vom Beginn bis zur Brandkatastrophe</h2>
-                    <p>Im Jahr 2006 erschien den Einwohnern der Gemeinde Alt Tellin auf der Ratsversammlung in der Storchenbar der niederländische Großinvestor Adrianus Straathof. Draußen vor der Tür wurde erstmals demonstriert: gegen den Plan, am idyllischen Tollensetal eine Ferkelfabrik für über 10.000 Sauen und Hunderttausende Ferkel pro Jahr errichten zu lassen.</p>
-                    <p>Damit begann ein über 15 Jahre währender bürgerschaftlicher Widerstand. Seit 2011 hielten Mitglieder und Sympathisanten der Bürgerinitiative „Rettet das Landleben am Tollensetal“ jeden Montag eine ununterbrochene Mahnwache vor den Toren der Anlage ab – bei Wind und Wetter, Sommer wie Winter.</p>
-                    <p>Im März 2021 bewahrheiteten sich die schlimmsten Befürchtungen der Kritiker: Ein verheerender Großbrand zerstörte die Anlage fast vollständig. Über 50.000 Tiere kamen in den Flammen um. Die <em>Katastrophenausgabe der Tollensetaler Stimme (2021-04)</em> dokumentierte dieses Desaster als Mahnmal gegen industrielle Tierqual und Fehlentscheidungen der Landespolitik.</p>
-                    <p style="margin-top: 1.5rem;"><a href="assets/pdfs/2584_Tollensetaler-Stimme-2021-04-Katastrophenausgabe.pdf" target="_blank" class="btn btn-primary">Katastrophenheft als PDF öffnen (3,5 MB)</a></p>
-                `
-            },
-            'broock': {
-                tag: 'Kultur & Denkmal',
-                title: 'Schlossanlage Broock: Auferstehung aus Ruinen',
-                content: `
-                    <p class="modal-meta">Kulturgeschichte Tollensetal</p>
-                    <h2>Schlossanlage Broock: Hoffnung für ein Baudenkmal</h2>
-                    <p>Die kleinen Bahnhöfe an der alten Nordbahn zwischen Berlin und Stralsund waren lange Zeit ruinös – kaum anders als die leerstehenden Schlösser und Gutshäuser Vorpommerns. Doch am Tollensetal wendete sich das Blatt: Vor wenigen Jahren traf sich eine engagierte Interessengruppe zur Rettung und kulturellen Belebung der Broocker Gutsanlage.</p>
-                    <p>Das ehrenamtlich betriebene Spenden-„GartenCafé“ vor dem Baubüro der Schlossanlage etablierte sich rasch als beliebter Treffpunkt für Einheimische, Wanderer und Radfahrer. Mit Mitteln der Bundesbeauftragten für Kultur und Medien und des Landesamtes für Denkmalpflege begann die bauliche Sicherung des Ensembles.</p>
-                    <p>Ziel ist es, Broock zu einem nachhaltigen, überregionalen Zentrum für Konzerte, Kultur und Veranstaltungen zu entwickeln – zentral angebunden über den nahegelegenen Bahnhof Sternfeld. Ein lebendiger Gegenentwurf zum industriellen Ausverkauf des ländlichen Raumes.</p>
-                `
-            },
-            'klempenow': {
-                tag: 'Kultur & Begegnung',
-                title: 'Burg Klempenow: KulturTransit 96 e.V.',
-                content: `
-                    <p class="modal-meta">Kultur an der Tollense</p>
-                    <h2>26 Jahre Kulturort Burg Klempenow</h2>
-                    <p>„Der Weg aus den Leitplanken, zurück zur Kultur“ – unter diesem Leitsatz startete der Verein KulturTransit 96 e.V. seinen Weg an die Öffentlichkeit. Die historische Wehranlage an der Tollense, einst Ruine, entwickelte sich Schritt für Schritt zu einem weithin geschätzten Anziehungspunkt.</p>
-                    <p>Von den legendären Appel- und Adventsmärkten über das <em>TRANSIT FESTIVAL</em> und das Filmfest <em>„der NEUE HEIMAT film“</em> bis hin zu Poesiesalons und Kräutertagen im Burggarten: Klempenow ist der Beweis, dass Kultur auf dem Lande selbstbestimmt, offen und lebendig blühen kann.</p>
-                `
-            },
-            'umwelt': {
-                tag: 'Natur & Tollensetal',
-                title: 'Wasser, Wegebau & Wiesenbrüter',
-                content: `
-                    <p class="modal-meta">Ökologie & Landschaftspflege</p>
-                    <h2>Das Tollensetal als bedrohter Lebensraum</h2>
-                    <p>Die Tollense schlängelt sich durch eine der reizvollsten Flussniederungen Norddeutschlands. Doch das Einzugsgebiet wird intensiv landwirtschaftlich bewirtschaftet. Enorme Nährstoffeinträge und Gülleausbringung belasten das Gewässersystem und erzwingen regelmäßige Krautungsmaßnahmen.</p>
-                    <p>Gleichzeitig ist das Tal Rastplatz für Tausende Kraniche und Brutstätte bedrohter Wiesenbrüter. Renaturierungsmaßnahmen und ein besonnener ländlicher Wegebau (wie die Sanierung der Straße zwischen Buchholz und Neubuchholz) zeigen, worauf es ankommt: Infrastruktur für die Bewohner, ohne die Natur zu zerstören.</p>
-                `
-            }
-        };
-
-        function openModal(articleKey) {
-            const data = articleData[articleKey];
-            if (!data) return;
-            const modalBody = document.getElementById('modalBody');
-            modalBody.innerHTML = data.content;
-            document.getElementById('articleModal').classList.add('open');
-        }
-
-        function closeModal() {
-            document.getElementById('articleModal').classList.remove('open');
-        }
-
-        function closeModalOnBg(event) {
-            if (event.target === document.getElementById('articleModal')) {
-                closeModal();
-            }
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
